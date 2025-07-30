@@ -9,35 +9,53 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
+  <style>
+    .intro-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .intro-text {
+      max-width: 500px;
+    }
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #004d40;
+    }
+  </style>
 </head>
 
 <body>
   <main>
     <section id="intro" class="section scrollspy full-height">
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Daniela Estrada</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <h5>Business Analytics master's student with experience in operations and reporting, passionate about data, strategy and delivering insights that drive decisions.</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/daniela-estrada-684793258/" target="_blank">
-                <button class="icon-btn linkedin">
-                  <em class="fa fa-linkedin"></em>
-                </button>
-              </a>
-              <a href="https://github.com/danestradam" target="_blank">
-                <button class="icon-btn github">
-                  <em class="fa fa-github"></em>
-                </button>
-              </a>
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
+      <div class="container intro-container">
+        <img src="/assets/img/foto-daniela.jpg" alt="Daniela Estrada" class="profile-pic">
+        <div class="intro-text">
+          <div class="caption">
+            <h2>Hi, I'm <span class="teal">Daniela Estrada</span></h2>
+            <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+            <h5>Business Analytics master's student with experience in operations and reporting, passionate about data, strategy and delivering insights that drive decisions.</h5>
+          </div>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/daniela-estrada-684793258/" target="_blank">
+              <button class="icon-btn linkedin">
+                <em class="fa fa-linkedin"></em>
+              </button>
+            </a>
+            <a href="https://github.com/danestradam" target="_blank">
+              <button class="icon-btn github">
+                <em class="fa fa-github"></em>
+              </button>
+            </a>
+          </div>
+          <div class='buttons'>
+            <a href="#about" class="readme">Read More</a>
+            <a href="#contact" class="contactme">Contact Me</a>
           </div>
         </div>
       </div>
