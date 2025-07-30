@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
   <style>
+    body {
+      background-color: #fff0f5; /* Fondo rosado claro */
+      color: #4b0014; /* Texto vino */
+    }
     .intro-container {
       display: flex;
       align-items: center;
@@ -25,7 +29,39 @@
       height: 200px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #004d40;
+      border: 3px solid #b3004b; /* borde color vino */
+    }
+    .page-title {
+      background-color: #b3004b !important; /* encabezados en color vino */
+    }
+    a, .teal-text {
+      color: #b3004b !important; /* enlaces en vino */
+    }
+    .icon-btn {
+      background-color: #b3004b;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .icon-btn:hover {
+      background-color: #7a002f;
+    }
+    .buttons a {
+      background-color: #b3004b;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      margin: 5px;
+      text-decoration: none;
+    }
+    .buttons a:hover {
+      background-color: #7a002f;
     }
   </style>
 </head>
@@ -34,12 +70,11 @@
   <main>
     <section id="intro" class="section scrollspy full-height">
       <div class="container intro-container">
-        <img src="/assets/img/foto-daniela.jpg" alt="Daniela Estrada" class="profile-pic">
+        <img src="/assets/img/mi_foto.jpg" alt="Daniela Estrada" class="profile-pic">
         <div class="intro-text">
           <div class="caption">
             <h2>Hi, I'm <span class="teal">Daniela Estrada</span></h2>
-            <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-            <h5>Business Analytics master's student with experience in operations and reporting, passionate about data, strategy and delivering insights that drive decisions.</h5>
+            <h5>A Business Analytics master's student with experience in operations and reporting, passionate about data, strategy and delivering insights that drive decisions.</h5>
           </div>
           <div class="social">
             <a href="https://www.linkedin.com/in/daniela-estrada-684793258/" target="_blank">
@@ -111,3 +146,4 @@
 </body>
 
 </html>
+
