@@ -28,11 +28,10 @@
       max-width: 500px;
     }
     .profile-pic {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
+      width: 250px;    /* tamaño ajustable */
+      height: auto;    /* mantiene proporción */
       object-fit: cover;
-      border: 3px solid #3e2723; /* borde café oscuro */
+      display: block;
     }
     .page-title {
       background-color: #3e2723 !important; /* encabezados en color café */
@@ -74,7 +73,8 @@
   <main>
     <section id="intro" class="section scrollspy full-height">
       <div class="container intro-container">
-        <img src="/assets/img/foto.jpeg.jpg" alt="Daniela Estrada" class="profile-pic">
+        <!-- Asegúrate de que el archivo se llame exactamente "foto.jpeg" -->
+        <img src="assets/img/foto.jpeg" alt="Daniela Estrada" class="profile-pic">
         <div class="intro-text">
           <div class="caption">
             <h2>Hi, I'm <span style="color:#3e2723;">Daniela Estrada</span></h2>
@@ -91,6 +91,7 @@
                 <em class="fa fa-github"></em>
               </button>
             </a>
+          </div>
         </div>
       </div>
     </section>
@@ -145,3 +146,4 @@
 </body>
 
 </html>
+
