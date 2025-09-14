@@ -29,21 +29,43 @@
     }
 
     .intro-text {
-      max-width: 500px;
+      max-width: 600px;
+    }
+
+    /* Título en una sola línea */
+    .intro-title {
+      white-space: nowrap;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #00838f;
+    }
+
+    .highlight {
+      color: #00838f;
+      font-weight: bold;
+    }
+
+    /* Descripción justificada */
+    .intro-description {
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #1a1a1a;
+      margin-top: 15px;
     }
 
     .page-title {
-      background-color: #00838f !important; /* Encabezados en turquesa */
+      background-color: #00838f !important;
       padding: 10px;
     }
 
     a {
-      color: #00acc1 !important; /* Links en cian */
+      color: #00acc1 !important;
       text-decoration: none !important;
     }
 
     a:hover {
-      color: #006064 !important; /* Hover en turquesa profundo */
+      color: #006064 !important;
     }
 
     .icon-btn {
@@ -76,9 +98,9 @@
       background-color: #006064;
     }
 
-    /* === Education cards === */
+    /* Education cards */
     .card {
-      border-left: 5px solid #00acc1; /* Línea lateral cian */
+      border-left: 5px solid #00acc1;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -95,6 +117,14 @@
       color: #00acc1;
       font-style: italic;
     }
+
+    /* Responsive: reducir título en pantallas pequeñas */
+    @media (max-width: 600px) {
+      .intro-title {
+        font-size: 1.5rem;
+        white-space: normal; /* permite que se parta si es necesario */
+      }
+    }
   </style>
 </head>
 
@@ -105,10 +135,12 @@
       <div class="container intro-container">
         <div class="intro-text">
           <div class="caption">
-            <h2>Hi, I'm <span style="color:#00838f;">Daniela Estrada</span></h2>
-            <h5>A Business Analytics master's student with experience in operations and reporting, passionate about data, strategy and delivering insights that drive decisions.</h5>
+            <h2 class="intro-title">Hi, I'm <span class="highlight">Daniela Estrada</span></h2>
+            <h5 class="intro-description">
+              A Business Analytics master's student with experience in operations and reporting, passionate about data, strategy and delivering insights that drive decisions.
+            </h5>
           </div>
-          <div class="social">
+          <div class="social" style="margin-top: 20px;">
             <a href="https://www.linkedin.com/in/daniela-estrada-684793258/" target="_blank">
               <button class="icon-btn linkedin">
                 <em class="fa fa-linkedin"></em>
