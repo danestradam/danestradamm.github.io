@@ -10,13 +10,16 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
   <style>
+    /* === Paleta profesional azul === */
     body {
-      background-color: #f5f5dc; /* Fondo beige */
-      color: #000000; /* Texto negro por defecto */
+      background-color: #f5f5f5; /* fondo gris claro */
+      color: #222222; /* texto gris oscuro */
     }
+
     h1, h2, h3, h4, h5, h6 {
-      color: #3e2723; /* Títulos café oscuro */
+      color: #0d47a1; /* azul fuerte para títulos */
     }
+
     .intro-container {
       display: flex;
       align-items: center;
@@ -24,24 +27,27 @@
       flex-wrap: wrap;
       gap: 30px;
     }
+
     .intro-text {
       max-width: 500px;
     }
-    .profile-pic {
-      width: 250px;    /* tamaño ajustable */
-      height: auto;    /* mantiene proporción */
-      object-fit: cover;
-      display: block;
-    }
+
     .page-title {
-      background-color: #3e2723 !important; /* encabezados en color café */
+      background-color: #0d47a1 !important; /* encabezados en azul fuerte */
+      padding: 10px;
     }
-    a, .teal-text {
-      color: #3e2723 !important; /* enlaces en café oscuro */
-      text-decoration: none !important; /* quita subrayado */
+
+    a {
+      color: #1565c0 !important; /* azul medio en links */
+      text-decoration: none !important;
     }
+
+    a:hover {
+      color: #003c8f !important; /* azul más oscuro en hover */
+    }
+
     .icon-btn {
-      background-color: #3e2723;
+      background-color: #1565c0;
       color: white;
       border: none;
       border-radius: 50%;
@@ -52,31 +58,54 @@
       justify-content: center;
       cursor: pointer;
     }
+
     .icon-btn:hover {
-      background-color: #1b0000;
+      background-color: #003c8f;
     }
+
     .buttons a {
-      background-color: #3e2723;
+      background-color: #1565c0;
       color: white;
       padding: 8px 16px;
       border-radius: 5px;
       margin: 5px;
       text-decoration: none;
     }
+
     .buttons a:hover {
-      background-color: #1b0000;
+      background-color: #003c8f;
+    }
+
+    /* === Education cards === */
+    .card {
+      border-left: 5px solid #1565c0; /* línea azul */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      color: #0d47a1 !important;
+      font-weight: bold;
+    }
+
+    .card-content p {
+      color: #222222;
+    }
+
+    .school-location {
+      color: #1565c0;
+      font-style: italic;
     }
   </style>
 </head>
 
 <body>
   <main>
+    <!-- Intro -->
     <section id="intro" class="section scrollspy full-height">
       <div class="container intro-container">
-        <img src="assets/img/foto.jpeg" alt="Daniela Estrada" class="profile-pic">
         <div class="intro-text">
           <div class="caption">
-            <h2>Hi, I'm <span style="color:#3e2723;">Daniela Estrada</span></h2>
+            <h2>Hi, I'm <span style="color:#0d47a1;">Daniela Estrada</span></h2>
             <h5>A Business Analytics master's student with experience in operations and reporting, passionate about data, strategy and delivering insights that drive decisions.</h5>
           </div>
           <div class="social">
@@ -95,8 +124,9 @@
       </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
+      <h3 class="page-title white-text">About</h3>
       <div class="container flow-text">
         <p>
           I am a Business Administration graduate currently studying a Master's in Business Analytics and Data Strategy at EAE Business School in Madrid. I enjoy working with data, building dashboards and reports, and uncovering insights that help guide strategic decisions.
@@ -107,15 +137,16 @@
       </div>
     </section>
 
+    <!-- Education -->
     <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
+      <h3 class="page-title white-text">Education</h3>
       <div class="container">
         <div class="row">
           <div class="col s12 m6 l6">
             <div class="card">
               <div class="card-content">
-                <p><span class="card-title teal-text hoverline">Universidad de las Américas</span></p>
-                <p class="brown-text">Quito, Ecuador</p>
+                <p><span class="card-title hoverline">Universidad de las Américas</span></p>
+                <p class="school-location">Quito, Ecuador</p>
                 <p><strong>Degree:</strong> Bachelor in Business Administration<br>2020–2024</p>
               </div>
             </div>
@@ -123,8 +154,8 @@
           <div class="col s12 m6 l6">
             <div class="card">
               <div class="card-content">
-                <p><span class="card-title teal-text hoverline">EAE Business School</span></p>
-                <p class="brown-text">Madrid, Spain</p>
+                <p><span class="card-title hoverline">EAE Business School</span></p>
+                <p class="school-location">Madrid, Spain</p>
                 <p><strong>Degree:</strong> Master in Business Analytics and Data Strategy<br>2024–2025</p>
               </div>
             </div>
@@ -133,8 +164,9 @@
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
+      <h3 class="page-title white-text">Contact</h3>
       <div class="container">
         <p><a href="mailto:danestradam@icloud.com">danestradam@icloud.com</a></p>
         <p><a href="https://www.linkedin.com/in/daniela-estrada-684793258/" target="_blank">LinkedIn</a></p>
@@ -145,4 +177,3 @@
 </body>
 
 </html>
-
