@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -44,13 +44,14 @@
       color: #00838f;
     }
 
-    .intro-description {
+    .intro-description,
+    .about-text {
       text-align: justify;
       line-height: 1.6;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #1a1a1a;
-      margin-top: 15px;
       font-family: "Roboto", Arial, sans-serif;
+      margin-top: 15px;
     }
 
     .page-title {
@@ -127,14 +128,15 @@
 
 <body>
   <main>
+    <!-- Intro -->
     <section id="intro" class="section scrollspy full-height">
       <div class="container intro-container">
         <div class="intro-text">
           <div class="caption">
             <h2 class="intro-title">Hi, I'm Daniela Estrada</h2>
-            <h5 class="intro-description">
+            <p class="intro-description">
               A Business Analytics master's student with experience in operations and reporting, passionate about data, strategy and delivering insights that drive decisions.
-            </h5>
+            </p>
           </div>
           <div class="social" style="margin-top: 20px;">
             <a href="https://www.linkedin.com/in/daniela-estrada-684793258/" target="_blank">
@@ -152,10 +154,11 @@
       </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="section scrollspy">
       <h3 class="page-title white-text">About</h3>
       <div class="container flow-text">
-        <p>
+        <p class="about-text">
           I am a Business Administration graduate currently studying a Master's in Business Analytics and Data Strategy at EAE Business School in Madrid. I enjoy working with data, building dashboards and reports, and uncovering insights that help guide strategic decisions.
         </p>
         <ul>
@@ -164,6 +167,7 @@
       </div>
     </section>
 
+    <!-- Education -->
     <section id="education" class="section scrollspy">
       <h3 class="page-title white-text">Education</h3>
       <div class="container">
@@ -190,6 +194,7 @@
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="section scrollspy full-height">
       <h3 class="page-title white-text">Contact</h3>
       <div class="container">
