@@ -9,15 +9,21 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Fuente Lora para el nombre -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+
   <style>
     /* === Paleta turquesa/cian === */
     body {
-      background-color: #ffffff; /* Fondo blanco */
-      color: #1a1a1a; /* Texto gris oscuro */
+      background-color: #ffffff;
+      color: #1a1a1a;
+      font-family: "Roboto", Arial, sans-serif; /* fuente base */
     }
 
     h1, h2, h3, h4, h5, h6 {
-      color: #00838f; /* Turquesa oscuro */
+      color: #00838f;
+      font-family: "Roboto", Arial, sans-serif;
     }
 
     .intro-container {
@@ -32,7 +38,7 @@
       max-width: 600px;
     }
 
-    /* Título en una sola línea */
+    /* Título */
     .intro-title {
       white-space: nowrap;
       font-size: 2.2rem;
@@ -40,18 +46,21 @@
       color: #00838f;
     }
 
+    /* "Daniela Estrada" más grande y con fuente Lora */
     .highlight {
+      font-family: "Lora", serif;
+      font-size: 2.5rem; /* 5 puntos más grande */
       color: #00838f;
-      font-weight: bold;
     }
 
-    /* Descripción justificada */
+    /* Descripción con mismo estilo que otros párrafos */
     .intro-description {
       text-align: justify;
       line-height: 1.6;
       font-size: 1.1rem;
       color: #1a1a1a;
       margin-top: 15px;
+      font-family: "Roboto", Arial, sans-serif;
     }
 
     .page-title {
@@ -118,11 +127,14 @@
       font-style: italic;
     }
 
-    /* Responsive: reducir título en pantallas pequeñas */
+    /* Responsive */
     @media (max-width: 600px) {
       .intro-title {
         font-size: 1.5rem;
-        white-space: normal; /* permite que se parta si es necesario */
+        white-space: normal;
+      }
+      .highlight {
+        font-size: 2rem;
       }
     }
   </style>
